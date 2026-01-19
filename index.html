@@ -43,6 +43,14 @@
                 border-radius: 4px;
                 font-family: monospace;
             }
+            pre {
+                background-color: #f1f1f1;
+                padding: 15px;
+                overflow-x: auto;
+                border-radius: 4px;
+                font-family: monospace;
+                line-height: 1.4;
+            }
             ul {
                 padding-left: 20px;
             }
@@ -81,20 +89,17 @@
 
                 <section>
                     <h2>Struktur Direktori</h2>
-                    <ul>
-                        <li>
-                            <strong>/img/ayah/</strong> - Berisi file gambar
-                            ayat Al-Qur'an
-                        </li>
-                        <li>
-                            <strong>/img/page/</strong> - Berisi file gambar
-                            halaman Al-Qur'an
-                        </li>
-                        <li>
-                            <strong>/audio/ayah/</strong> - Berisi file audio
-                            ayat Al-Qur'an
-                        </li>
-                    </ul>
+                    <pre>
+├── /img/
+│   ├── /ayah/
+│   │   └── [nomor_surah]_[nomor_ayat].png
+│   └── /page/
+│       └── [nomor_halaman].png
+└── /audio/
+    └── /ayah/
+        └── [nomor_surah_3digit][nomor_ayat_3digit].mp3
+                </pre
+                    >
                 </section>
 
                 <section>
