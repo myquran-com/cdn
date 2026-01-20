@@ -98,6 +98,8 @@
 └── /audio/
     └── /ayah/
         └── [nomor_surah_3digit][nomor_ayat_3digit].mp3
+    └── /page/
+        └── [nomor_page].mp3
     └── /surah/
         └── [nomor_surah].mp3
                 </pre
@@ -106,30 +108,46 @@
 
                 <section>
                     <h2>Format Nama File</h2>
+
+                    <h3>Image</h3>
                     <ul>
                         <li>
                             Gambar Ayat:
-                            <code>/img/ayah/[nomor_surah]_[nomor_ayat].png</code>
+                            <code
+                                >/img/ayah/[nomor_surah]_[nomor_ayat].png</code
+                            >
                         </li>
                         <li>
                             Gambar Halaman:
                             <code>/img/page/[nomor_halaman].png</code>
                         </li>
+                    </ul>
+                    <h3>Audio</h3>
+                    <ul>
                         <li>
                             Audio Ayat:
-                            <code>/audio/ayah/[nomor_surah_3digit][nomor_ayat_3digit].mp3</code><br />
+                            <code
+                                >/audio/ayah/[nomor_surah_3digit][nomor_ayat_3digit].mp3</code
+                            ><br />
                             (contoh: 001001.mp3 untuk Surat Al-Fatihah Ayat 1)
+                        </li>
+                        <li>
+                            Audio Page:
+                            <code>/audio/page/[nomor_page].mp3</code> <br />
+                            nomor halaman dari <code>1-604</code>
                         </li>
                         <li>
                             Audio Surat:
                             <code>/audio/surah/[nomor_surah].mp3</code><br />
-                            (contoh: 1.mp3 untuk Surat Al-Fatihah Ayat 1)
+                            nomor surat dari <code>1-114</code>
                         </li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Contoh URL</h2>
+
+                    <h3>Image</h3>
                     <div class="example-url">
                         https://cdn.myquran.com/img/ayah/1_1.png
                     </div>
@@ -142,11 +160,16 @@
                     <div class="example-url">
                         https://cdn.myquran.com/img/page/604.png
                     </div>
+
+                    <h3>Audio</h3>
                     <div class="example-url">
                         https://cdn.myquran.com/audio/ayah/001001.mp3
                     </div>
                     <div class="example-url">
                         https://cdn.myquran.com/audio/ayah/002001.mp3
+                    </div>
+                    <div class="example-url">
+                        https://cdn.myquran.com/audio/page/1.mp3
                     </div>
                     <div class="example-url">
                         https://cdn.myquran.com/audio/surah/1.mp3
